@@ -48,7 +48,7 @@ function TarotFace({ drawn, small = false }: { drawn: DrawnCard; small?: boolean
 
 function CardBack({ index, onPick, label }: { index: number; onPick: () => void; label: string }) {
   return <button className="tarot-back" type="button" onClick={onPick} aria-label={`${label} ${index + 1}번 카드 선택`} style={{ "--fan": `${(index - 3) * 1.6}deg`, "--rise": `${Math.abs(index - 3) * 2}px` } as React.CSSProperties}>
-    <span className="back-frame"><i>☾</i><b>✦</b><small>MIDNIGHT<br />DIARY</small></span>
+    <span className="back-frame"><i>☾</i><b>✦</b><small>일기<br />밴드</small></span>
   </button>;
 }
 
