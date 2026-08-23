@@ -348,11 +348,11 @@ export default function Home() {
   return <main className="night-stage">
     <div className="stars" aria-hidden="true">{Array.from({ length: 22 }, (_, index) => <i key={index} style={{ "--x": `${(index * 37) % 100}%`, "--y": `${(index * 61) % 100}%`, "--delay": `${(index % 7) * -.7}s`, "--size": `${2 + index % 4}px` } as React.CSSProperties} />)}</div>
     <div className="diary-shell">
-      <header className="diary-nav"><a className="diary-logo" href="#top"><span>☾</span><b>midnight diary</b><small>LOVE TAROT · VOL.01</small></a><nav aria-label="페이지 바로가기"><a href="#tarot">타로</a><a href="#question">질문</a><a href="#friend">추천 친구</a></nav></header>
+      <header className="diary-nav"><a className="diary-logo" href="#top"><span>☾</span><b>일기 밴드</b><small>LOVE TAROT · VOL.01</small></a><nav aria-label="페이지 바로가기"><a href="#tarot">타로</a><a href="#question">질문</a><a href="#friend">추천 친구</a></nav></header>
       <div className="diary-pages" id="top">
         <section className="hero-page">
           <span className="binding-line" aria-hidden="true" />
-          <div className="hero-copy"><span className="eyebrow">TUESDAY · 00:18 · SECRET NOTE</span><h1>오늘 밤<br /><em>새 일기를</em>작성해 볼까요?</h1><p>메이저 한 장은 관계의 큰 흐름을,<br />마이너 한 장은 지금의 감정과 행동을 비춰요.</p><a className="start-link" href="#tarot">오늘의 타로 펼치기<span>↓</span></a></div>
+          <div className="hero-copy"><span className="eyebrow">SECRET NOTE</span><h1>오늘 밤<br /><em>새 일기를</em>작성해 볼까요?</h1><p>메이저 한 장은 관계의 큰 흐름을,<br />마이너 한 장은 지금의 감정과 행동을 비춰요.</p><a className="start-link" href="#tarot">오늘의 타로 펼치기<span>↓</span></a></div>
           <div className="scrap-zone" aria-hidden="true"><span className="tape tape-one" /><div className="polaroid moon-photo"><div><i>☾</i><b>✦</b><b>✧</b></div><p>our midnight</p></div><span className="tape tape-two" /><div className="polaroid star-photo"><div><i>♡</i><b>+</b></div><p>love memo #018</p></div><div className="sticky-quote">don&apos;t rush.<br />love has its<br />own timing. <span>♡</span></div><div className="sharp-pencil"><i /></div></div>
         </section>
 
