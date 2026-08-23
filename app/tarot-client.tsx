@@ -8,7 +8,7 @@ type DrawStep = "idle" | "major" | "minor" | "result";
 type MemberTendency = "탑" | "바텀" | "";
 
 const CATEGORY: Record<Category, { label: string; en: string; title: string; description: string; prompt: string; mark: string }> = {
-  love: { label: "연애 타로", en: "LOVE", title: "이 사람이랑 만날 수 있을까", description: "상대와 나 사이에 흐르는 마음과 다음 행동을 읽어요.", prompt: "예: 그 사람은 지금 나를 어떻게 생각할까?", mark: "♡" },
+  love: { label: "연애 타로", en: "LOVE", title: "두근두근한 마음을 담아", description: "상대와 나 사이에 흐르는 마음과 다음 행동을 읽어요.", prompt: "예: 그 사람은 지금 나를 어떻게 생각할까?", mark: "♡" },
   reunion: { label: "재회 타로", en: "REUNION", title: "우리 다시 이어질 수 있을까", description: "남은 감정과 재회 전에 달라져야 할 현실을 살펴봐요.", prompt: "예: 다시 연락한다면 무엇이 달라져야 할까?", mark: "↻" },
   breakup: { label: "이별 타로", en: "GOODBYE", title: "끝난 마음의 다음 페이지", description: "이별이 남긴 의미와 지금 나를 회복시키는 방향을 읽어요.", prompt: "예: 이 관계에서 이제 놓아야 할 것은?", mark: "⌁" },
 };
@@ -165,7 +165,7 @@ function buildAiPrompt(category: Category, question: string, major: DrawnCard, m
 ## 6. 구함 추천
    - 추천 활동 1개
    - 짧은 구함/댓글 미팅 멘트 3개
-   - 감성적인 시 문장보다 핀터레스트 등에서 찾은 실제 유행 인터넷 밈을 참고할 것
+   - 감성적인 시 문장보다 핀터레스트 등에서 찾은 실제 유행 인터넷 밈을 참고할 것 단 AI가 판단해서 아무 말이나 하지 않을 것
 
 전체 분량은 한국어 기준 약 1,200~1,800자로 충분히 상세하게 작성하세요. 추가 질문을 요구하지 말고 주어진 정보 안에서 최선의 답을 완성하세요. 소제목과 짧은 문단을 사용하고, 질문과 무관한 타로 강의·상투적인 위로·책임 회피성 문장은 빼세요.`;
 }
