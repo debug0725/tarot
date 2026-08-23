@@ -55,11 +55,11 @@ export const suitMeta: Record<Suit, { name: string; mark: string; element: strin
   wands: {
     name: "완드",
     mark: "✦",
-    element: "불 · 끌림과 행동",
+    element: "불 · 상대를 원하는 행동",
     lens: {
-      love: "끌림은 말보다 행동의 속도와 열기로 드러납니다.",
+      love: "끌림은 단순한 멘트보다 당신의 행동과 메시지 속도의 열기로 드러납니다.",
       reunion: "다시 이어지려는 의지는 실제 연락이나 만남 제안으로 확인해야 합니다.",
-      breakup: "상처를 억지로 덮기보다 새로운 생활 에너지로 바꾸는 과정이 중요합니다.",
+      breakup: "상처를 억지로 덮기보다 생활 속에 녹이는 과정이 중요합니다.",
     },
   },
   cups: {
@@ -67,9 +67,9 @@ export const suitMeta: Record<Suit, { name: string; mark: string; element: strin
     mark: "♡",
     element: "물 · 감정과 교감",
     lens: {
-      love: "호감의 크기보다 감정을 주고받을 수 있는지가 핵심입니다.",
+      love: "호감의 크기보다 감정을 주고받을 수 있는지가 핵심입니다. 이 사람, 믿을 수 있나요?",
       reunion: "추억과 그리움이 남아 있어도 현재의 감정인지 확인해야 합니다.",
-      breakup: "느끼는 마음을 부정하지 않을수록 회복이 조용히 시작됩니다.",
+      breakup: "비참함도 슬픔도 부정하지 않을수록 비어 있는 컵에 다시 물이 채워지기 시작합니다.",
     },
   },
   swords: {
@@ -77,7 +77,7 @@ export const suitMeta: Record<Suit, { name: string; mark: string; element: strin
     mark: "†",
     element: "공기 · 생각과 대화",
     lens: {
-      love: "추측을 키우기보다 분명한 말과 경계를 세우는 일이 필요합니다.",
+      love: "단순한 추측과 의심을 키우는 것보다는 분명한 말로 경계를 세우는 일이 필요합니다.",
       reunion: "재회의 성패는 감정 호소보다 과거 문제를 솔직히 다룰 수 있는지에 달렸습니다.",
       breakup: "생각의 반복을 멈추고 사실과 해석을 구분하는 것이 회복의 첫걸음입니다.",
     },
@@ -89,7 +89,7 @@ export const suitMeta: Record<Suit, { name: string; mark: string; element: strin
     lens: {
       love: "말보다 시간, 약속, 생활 속 배려처럼 반복되는 행동을 살펴보세요.",
       reunion: "다시 만난 뒤 유지할 현실적 조건과 달라진 행동이 있는지가 중요합니다.",
-      breakup: "수면·식사·일상 같은 작은 기반을 되찾는 일이 마음을 가장 단단히 돕습니다.",
+      breakup: "수면 · 식사 · 일상 같은 작은 기반을 되찾는 일이 마음을 가장 단단히 돕습니다.",
     },
   },
 };
@@ -97,10 +97,10 @@ export const suitMeta: Record<Suit, { name: string; mark: string; element: strin
 export const majorCards: TarotCard[] = [
   m("fool", "바보", "THE FOOL", "✧", "0",
     { keywords: "새 출발 · 자유 · 가능성", text: "정해진 결말보다 새로운 경험을 향해 마음이 열려 있습니다.", advice: "기대는 가볍게 품되 상대의 신호를 확인하며 한 걸음씩 움직이세요.", score: 1 },
-    { keywords: "충동 · 불안정 · 준비 부족", text: "설렘이 현실 점검보다 앞서거나 같은 실수를 가볍게 넘길 수 있습니다.", advice: "지금의 선택이 외로움을 피하려는 충동인지 먼저 살펴보세요.", score: -1 }),
+    { keywords: "충동 · 불안정 · 준비 부족", text: "설렘보다 현실 점검을 먼저 해 보세요. 상대보다 앞서 버리는 실수를 가볍게 넘길 수 있습니다.", advice: "지금의 선택이 외로움을 피하려는 충동인지 먼저 살펴보세요.", score: -1 }),
   m("magician", "마법사", "THE MAGICIAN", "∞", "I",
     { keywords: "의지 · 표현 · 시작", text: "마음과 행동을 일치시키면 관계의 흐름을 실제로 바꿀 힘이 있습니다.", advice: "애매한 암시보다 원하는 바를 분명하고 매력 있게 표현하세요.", score: 2 },
-    { keywords: "말뿐인 약속 · 조종 · 자신감 부족", text: "표현은 화려하지만 진심이나 실행이 따라오지 않을 수 있습니다.", advice: "말보다 반복되는 행동을 기준으로 진정성을 판단하세요.", score: -2 }),
+    { keywords: "말뿐인 약속 · 조종 · 자신감 부족", text: "표현은 화려하지만 진심이나 실행이 따라오지 않을 수 있습니다.", advice: "말보다 반복되는 행동을 기준으로 진정성을 판단하세요. 권태기일 수 있습니다.", score: -2 }),
   m("priestess", "여사제", "THE HIGH PRIESTESS", "☾", "II",
     { keywords: "직관 · 침묵 · 숨은 감정", text: "겉으로 드러난 말보다 아직 표현되지 않은 감정이 더 크게 흐릅니다.", advice: "답을 재촉하지 말고 불편한 느낌까지 포함해 직관을 관찰하세요.", score: 0 },
     { keywords: "비밀 · 혼란 · 직감 외면", text: "침묵이 깊어지며 사실과 상상이 뒤섞이기 쉽습니다.", advice: "확인되지 않은 추측으로 빈칸을 채우지 말고 필요한 질문을 하세요.", score: -1 }),
@@ -115,13 +115,13 @@ export const majorCards: TarotCard[] = [
     { keywords: "관습의 압박 · 불일치 · 고정관념", text: "남들이 정한 관계의 모양이 두 사람의 진짜 마음을 누를 수 있습니다.", advice: "체면과 기대를 걷어내고 두 사람에게 맞는 방식을 찾으세요.", score: -1 }),
   m("lovers", "연인", "THE LOVERS", "♡", "VI",
     { keywords: "끌림 · 결합 · 선택", text: "강한 끌림과 가치의 일치가 나타나며, 서로를 선택할 책임도 함께 따릅니다.", advice: "감정만 확인하지 말고 이 관계를 선택했을 때 지킬 약속을 생각하세요.", score: 2 },
-    { keywords: "불일치 · 유혹 · 선택 회피", text: "끌림은 남아 있어도 가치관이나 선택의 방향이 어긋날 수 있습니다.", advice: "애매한 상태를 유지하려는 이유보다 진짜 원하는 관계를 정하세요.", score: -2 }),
+    { keywords: "불일치 · 유혹 · 선택 회피", text: "호감은 남아 있어도 가치관이나 서로가 바라보는 방향이 어긋날 수 있습니다.", advice: "애매한 상태를 유지하려는 이유보다 진짜 원하는 관계를 정의하세요.", score: -2 }),
   m("chariot", "전차", "THE CHARIOT", "➳", "VII",
     { keywords: "전진 · 결단 · 주도권", text: "엇갈린 감정을 한 방향으로 모으면 관계가 빠르게 진전될 수 있습니다.", advice: "상대를 밀어붙이기보다 자신의 방향을 분명히 정하고 움직이세요.", score: 2 },
     { keywords: "폭주 · 방향 상실 · 감정 충돌", text: "조급함과 주도권 다툼이 관계를 엉뚱한 방향으로 끌 수 있습니다.", advice: "지금은 속도보다 목적과 감정 조절이 먼저입니다.", score: -1 }),
   m("strength", "힘", "STRENGTH", "♌", "VIII",
     { keywords: "용기 · 인내 · 다정한 힘", text: "강요하지 않는 용기와 꾸준한 애정이 관계를 안정시킵니다.", advice: "감정을 억누르지 말고 부드럽고 단단한 방식으로 표현하세요.", score: 2 },
-    { keywords: "자신감 저하 · 질투 · 감정 억압", text: "거절에 대한 두려움이 질투나 과민함으로 나타날 수 있습니다.", advice: "상대의 반응과 자신의 가치를 분리해 생각하세요.", score: -1 }),
+    { keywords: "자신감 저하 · 질투 · 감정 억압", text: "거절에 대한 두려움이 질투나 집착으로 나타날 수 있습니다. 상대에게 그런 모습을 보이지 마세요.", advice: "상대의 반응과 자신의 가치를 분리해 생각하세요.", score: -1 }),
   m("hermit", "은둔자", "THE HERMIT", "⌁", "IX",
     { keywords: "성찰 · 거리 · 내면의 답", text: "관계를 서두르기보다 혼자 생각하고 진짜 마음을 확인할 시간이 필요합니다.", advice: "침묵을 벌로 쓰지 말고 생각할 시간이 필요하다고 알려주세요.", score: 0 },
     { keywords: "고립 · 회피 · 단절", text: "필요한 성찰을 넘어 관계에서 숨어버리거나 마음을 닫을 수 있습니다.", advice: "혼자 견디는 습관이 대화를 피하는 핑계가 되지 않는지 보세요.", score: -2 }),
@@ -166,10 +166,10 @@ export const majorCards: TarotCard[] = [
 const U = (keywords: string, text: string, advice: string, score: number): Meaning => ({ keywords, text, advice, score });
 
 export const minorCards: TarotCard[] = [
-  n("wands", "ace", "완드 에이스", "ACE OF WANDS", "A", U("불꽃 · 새 끌림 · 시작", "호기심과 육체적 끌림이 강하게 시작됩니다.", "생각만 키우지 말고 가벼운 행동으로 가능성을 확인하세요.", 2), U("식은 열정 · 시작 지연 · 무기력", "마음은 있어도 행동할 힘이나 타이밍이 부족합니다.", "억지로 불을 붙이기보다 무엇이 열정을 막는지 보세요.", -1)),
-  n("wands", "two", "완드 2", "TWO OF WANDS", "2", U("계획 · 가능성 · 먼 시선", "관계의 다음 단계를 상상하며 선택지를 비교합니다.", "가능성만 바라보지 말고 구체적인 약속 하나를 정하세요.", 1), U("망설임 · 안전지대 · 계획 차질", "변화를 원하지만 익숙한 상태를 떠나기 두렵습니다.", "두려움 때문에 보류하는 선택이 무엇인지 적어보세요.", -1)),
-  n("wands", "three", "완드 3", "THREE OF WANDS", "3", U("확장 · 기다린 답 · 전망", "보낸 신호에 대한 응답을 기다리며 관계의 범위가 넓어집니다.", "기다리는 동안 자신의 생활과 가능성도 함께 키우세요.", 1), U("지연 · 좁은 시야 · 기대 어긋남", "기대했던 진전이 늦어지고 계획이 맞지 않습니다.", "상대의 속도를 추측하지 말고 일정과 의사를 확인하세요.", -1)),
-  n("wands", "four", "완드 4", "FOUR OF WANDS", "4", U("축하 · 안정 · 함께하는 자리", "편안한 만남과 관계의 공식화에 좋은 흐름입니다.", "둘만의 기쁨을 주변과 나눌 수 있는지 살펴보세요.", 2), U("불안한 기반 · 소속감 부족 · 갈등", "겉보기에는 괜찮아도 함께 있을 자리와 안정감이 부족합니다.", "관계의 겉모양보다 실제로 편안한지 확인하세요.", -1)),
+  n("wands", "ace", "완드 에이스", "ACE OF WANDS", "A", U("불꽃 · 새 끌림 · 시작", "호기심과 육체적 끌림이 강하게 시작됩니다. 야한 멘트를 치기에 적절한 시기인 것 같아요.", "생각만 키우지 말고 가벼운 행동으로 가능성을 확인하세요.", 2), U("식은 열정 · 시작 지연 · 무기력", "마음은 있어도 행동할 힘이나 타이밍이 부족합니다.", "억지로 불을 붙이기보다 무엇이 열정을 막는지 보세요.", -1)),
+  n("wands", "two", "완드 2", "TWO OF WANDS", "2", U("계획 · 가능성 · 먼 시선", "관계의 다음 단계를 상상하며 주어진 선택지를 비교해 봅시다.", "가능성만 바라보지 말고 구체적인 약속 하나를 정하세요.", 1), U("망설임 · 안전지대 · 계획 차질", "변화를 원하지만 익숙한 상태를 떠나기 두렵습니다.", "두려움 때문에 보류하는 선택이 무엇인지 적어보세요.", -1)),
+  n("wands", "three", "완드 3", "THREE OF WANDS", "3", U("확장 · 기다린 답 · 전망", "보낸 신호에 대한 응답을 기다리며 서로를 바라보는 시야 또한 넓어집니다.", "기다리는 동안 자신의 생활과 가능성도 함께 키우세요.", 1), U("지연 · 좁은 시야 · 기대 어긋남", "기대했던 진전이 늦어지고 계획이 맞지 않습니다.", "상대의 속도를 추측하지 말고 일정과 의사를 확인하세요.", -1)),
+  n("wands", "four", "완드 4", "FOUR OF WANDS", "4", U("축하 · 안정 · 함께하는 자리", "편안한 만남과 새로운 관계의 공식화에 좋은 흐름입니다.", "둘만의 기쁨을 주변과 나눌 수 있는지 살펴보세요.", 2), U("불안한 기반 · 소속감 부족 · 갈등", "겉보기에는 괜찮아도 함께 있을 자리와 안정감이 부족합니다.", "관계의 겉모양보다 실제로 편안한지 확인하세요.", -1)),
   n("wands", "five", "완드 5", "FIVE OF WANDS", "5", U("경쟁 · 신경전 · 충돌", "끌림 속에 자존심과 주도권 다툼이 섞여 있습니다.", "이기려 하기보다 갈등의 진짜 목적을 말하세요.", -1), U("갈등 회피 · 긴장 완화 · 속앓이", "싸움은 줄어도 할 말을 삼켜 긴장이 남습니다.", "평화를 위해 감춘 불만을 안전한 방식으로 꺼내세요.", 0)),
   n("wands", "six", "완드 6", "SIX OF WANDS", "6", U("인정 · 자신감 · 좋은 소식", "관계에서 확신과 공개적인 인정이 따를 수 있습니다.", "상대의 인정뿐 아니라 자신의 기준도 소중히 여기세요.", 2), U("인정 욕구 · 자존심 · 기대 이하", "상대의 반응으로 자신의 가치를 확인하려는 마음이 큽니다.", "보여주기 위한 관계가 아닌지 돌아보세요.", -1)),
   n("wands", "seven", "완드 7", "SEVEN OF WANDS", "7", U("방어 · 신념 · 경계 지키기", "관계를 지키기 위해 외부 압력이나 의심에 맞서야 합니다.", "지켜야 할 관계와 지켜야 할 경계를 함께 구분하세요.", 0), U("지침 · 방어 포기 · 압도됨", "계속 설명하고 버티느라 관계에 지쳐 있습니다.", "혼자만 싸우는 관계라면 잠시 내려놓으세요.", -2)),
@@ -281,16 +281,16 @@ type QuestionFocus = {
 function detectQuestionFocus(question: string, category: Category): QuestionFocus {
   const normalized = question.replace(/\s/g, "").toLowerCase();
   const includesAny = (words: string[]) => words.some((word) => normalized.includes(word));
-  if (includesAny(["다른사람", "다른여자", "다른남자", "제3자", "양다리", "새사람", "환승"])) return { key: "thirdParty", intent: "thirdParty", label: "제3자·다른 사람" };
-  if (includesAny(["잠수", "읽씹", "안읽", "차단", "언팔", "연락끊", "답이없", "답장없"])) return { key: "silence", intent: "contact", label: "잠수·읽씹·차단" };
-  if (includesAny(["언제연락", "연락언제", "연락올까", "연락오", "먼저연락", "연락시기"])) return { key: "contactTiming", intent: "contact", label: "연락 시기" };
-  if (includesAny(["후폭풍", "후회", "미련있", "그리워할", "생각날", "보고싶어할"])) return { key: "regret", intent: "feelings", label: "미련·후회·후폭풍" };
+  if (includesAny(["다른 사람", "다른 여자", "다른 남자", "제3자", "양다리", "새 사람", "환승"])) return { key: "thirdParty", intent: "thirdParty", label: "제3자·다른 사람" };
+  if (includesAny(["잠수", "읽씹", "안읽", "차단", "언팔", "연락 끊", "답이 없", "답장 없"])) return { key: "silence", intent: "contact", label: "잠수·읽씹·차단" };
+  if (includesAny(["언제 연락", "연락 언제", "연락 올까", "연락 오", "먼저 연락", "연락 시기"])) return { key: "contactTiming", intent: "contact", label: "연락 시기" };
+  if (includesAny(["후폭풍", "후회", "미련 있", "그리워할", "생각 날", "보고 싶어 할"])) return { key: "regret", intent: "feelings", label: "미련·후회·후폭풍" };
   if (includesAny(["사과", "미안", "용서", "해명"])) return { key: "apology", intent: "action", label: "사과·용서·해명" };
   if (includesAny(["고백", "사귀", "연애할", "관계정리", "무슨사이", "공식", "확답"])) return { key: "commitment", intent: "possibility", label: "고백·관계 확정" };
   if (includesAny(["만날", "만나자", "데이트", "약속", "대면", "마주칠"])) return { key: "meeting", intent: "action", label: "만남·데이트" };
   if (includesAny(["연락", "답장", "카톡", "메시지", "전화", "디엠", "dm"])) return { key: "contact", intent: "contact", label: "연락의 흐름" };
   if (includesAny(["마음", "생각", "감정", "호감", "좋아", "사랑", "그리워", "질투"])) return { key: "feelings", intent: "feelings", label: "상대의 마음" };
-  if (includesAny(["재회", "다시만", "돌아", "가능성", "이어질", "될까"])) return { key: "possibility", intent: "possibility", label: "관계 가능성" };
+  if (includesAny(["재회", "다시 만", "돌아", "가능성", "이어질", "될까"])) return { key: "possibility", intent: "possibility", label: "관계 가능성" };
   if (includesAny(["앞으로", "미래", "결혼", "발전", "어떻게될", "결과"])) return { key: "future", intent: "future", label: "앞으로의 전개" };
   if (includesAny(["왜", "이유", "문제", "장애", "방해", "갈등", "거리"])) return { key: "obstacle", intent: "obstacle", label: "막히는 이유" };
   if (includesAny(["어떻게", "해야", "행동", "먼저", "방법", "다가가"])) return { key: "action", intent: "action", label: "내가 할 행동" };
@@ -514,10 +514,10 @@ function actionPlanFor(category: Category, band: number, major: DrawnCard, minor
 type MemeCopy = { cue: string; postLine: string; openingLine: string };
 
 const seekingMemes: MemeCopy[] = [
-  { cue: "연애비 입금해", postLine: "연애비 입금해. 삼만 원 말고 평생 자동이체 가능한 사람만.", openingLine: "입금명은 본명 말고 임관으로 부탁." },
-  { cue: "남친 구함", postLine: "남친 구함. 지원 조건은 나 좋아하기, 우대 조건은 티 내기.", openingLine: "서류는 됐고 플러팅 한 줄만 제출해." },
-  { cue: "애인 구함", postLine: "애인 구함. 급구인데 아무나 뽑을 생각은 없음.", openingLine: "일단 지원 동기부터 말해 봐." },
-  { cue: "남자친구 없어요", postLine: "남자친구 없어요. 없는데요, 오늘부터 생길 예정입니다.", openingLine: "그 예정에 네 이름 넣어도 돼?" },
+  { cue: "연애비 입금해", postLine: "연애비 입금해. 삼만 원 말고 평생 자동이체 가능한 사람만.", openingLine: "입금명은 니가 나 사랑하는 만큼 냐냐냥 해 봐." },
+  { cue: "남친 구함", postLine: "남친 구함. 지원 조건은 나 좋아하기, 우대 조건은 티 내기.", openingLine: "서류는 됐고 너는 이름 하나만 제출해." },
+  { cue: "애인 구함", postLine: "애인 구함. 급구인데 아무나 뽑을 생각은 없음.", openingLine: "일단 내 어디에 끌렸는지 말해 봐." },
+  { cue: "남자 친구 없어요", postLine: "남자 친구 없어요. 없는데요, 오늘부터 생길 예정입니다.", openingLine: "그 예정에 네 이름 넣어도 돼?" },
   { cue: "연애하고 싶다", postLine: "연애하고 싶다. 이상 모집 공고 끝.", openingLine: "공고 읽었으면 지원해. 읽씹은 불합격." },
   { cue: "친구비 말고 연애비", postLine: "친구비는 됐고 연애비 받습니다. 현금 말고 관심으로.", openingLine: "첫 달 무료 체험은 없어. 지금부터 진심으로 해." },
   { cue: "LOVE 간절한 외침", postLine: "LOVE. 사람 급함. 사랑 더 급함. 그래도 아무나는 안 됨.", openingLine: "급하긴 한데 너 정도는 기다려 줄 수 있어." },
@@ -532,14 +532,14 @@ const seekingMemes: MemeCopy[] = [
 ];
 
 const commentMeetingMemes: MemeCopy[] = [
-  { cue: "이제 누가 공지해 주냐", postLine: "관리자랑 사귀다 헤어졌는데 오늘도 그 사람이 공지를 올린 상황. 아무렇지 않은 척 댓글을 달아야 하는 장면부터.", openingLine: "우리 헤어지면 이제 누가 공지해 주냐." },
-  { cue: "너 나 좋아하잖아", postLine: "사소한 말다툼 중 실수로 서로의 마음을 아는 티가 나 버린 상황. 먼저 시선을 피한 쪽부터.", openingLine: "근데 너 나 좋아하잖아." },
-  { cue: "넌 나를 왜 좋아해?", postLine: "고백을 받은 뒤 장난으로 넘기려다 이유가 진짜 궁금해진 상황. 대답을 재촉하는 장면부터.", openingLine: "넌 나를 왜 좋아해? 얼굴 말고 제대로." },
-  { cue: "나 아무 얘기도 안 했는데 왜 이래", postLine: "질투하는 걸 들키기 싫어서 괜히 차갑게 굴었는데 상대가 먼저 눈치챈 상황.", openingLine: "나 아무 얘기도 안 했는데 왜 이래. 찔리는 거 있어?" },
-  { cue: "뭐… 뭐 하는 거예요?", postLine: "친목방에서만 말 섞던 사람이 갑자기 개인 채팅으로 플러팅을 던진 상황.", openingLine: "뭐… 뭐 하는 거예요? 계속해 봐요." },
+  { cue: "이제 누가 공지해 주냐", postLine: "관리자랑 사귀다 헤어졌는데 오늘도 그 사람이 공지를 올린 상황. 아무렇지 않은 척 댓글을 달아야 하는 장면부터.", openingLine: "이제 누가 공지해 주냐." },
+  { cue: "너 나 좋아하잖아", postLine: "사소한 말다툼 중 실수로 서로의 마음을 아는 티가 나 버린 상황. 먼저 시선을 피한 쪽부터.", openingLine: "그런데 너 나 좋아하잖아." },
+  { cue: "넌 나를 왜 좋아해?", postLine: "고백을 받은 뒤 장난으로 넘기려다 이유가 진짜 궁금해진 상황. 대답을 재촉하는 장면부터.", openingLine: "너는 나를 왜 좋아해? 얼굴이라 하지 말고." },
+  { cue: "나 아무 이야기도 안 했는데 왜 이래", postLine: "질투하는 걸 들키기 싫어서 괜히 차갑게 굴었는데 상대가 먼저 눈치챈 상황.", openingLine: "나 아무 이야기도 안 했는데 왜 이래. 찔리는 거 있어?" },
+  { cue: "뭐 하는 거예요?", postLine: "친목 단체에서만 말 섞던 사람이 갑자기 개인 채팅으로 플러팅을 던진 상황.", openingLine: "왜 갑자기 제 허벅지를 더듬으세요?" },
   { cue: "알면서 왜", postLine: "서로 좋아하는 걸 다 아는데 한쪽이 끝까지 확답을 피하는 상황. 이번에는 모르는 척을 받아주지 않기.", openingLine: "알면서 왜 자꾸 나한테 물어." },
-  { cue: "할 말 있는데", postLine: "새벽에 갑자기 ‘할 말 있는데’만 보내 놓고 상대가 접속하기를 기다리는 상황.", openingLine: "할 말 있는데. 네가 먼저 긴장해 줘." },
-  { cue: "다 알고 있었어?", postLine: "숨긴다고 숨겼던 짝사랑을 상대가 오래전부터 알고 있었다고 말한 상황.", openingLine: "다 알고 있었어? 그런데도 계속 내 옆에 있었고?" },
+  { cue: "할 말 있는데", postLine: "새벽에 갑자기 ‘할 말 있는데’만 보내 놓고 상대가 접속하기를 기다리는 상황.", openingLine: "할 말 있는데. 나한테 계속 긴장해 줘." },
+  { cue: "다 알고 있었어?", postLine: "숨긴다고 숨겼던 짝사랑을 상대가 오래전부터 알고 있었다고 말한 상황.", openingLine: "너는 진짜 개새끼야." },
   { cue: "왜 나 안 사랑해?", postLine: "장난처럼 사랑을 확인하다가 대답이 늦어져 분위기가 묘해진 상황.", openingLine: "왜 나 안 사랑해. 오 초 안에 정정해." },
   { cue: "정체가 뭐지?", postLine: "평소엔 무심하던 사람이 갑자기 다정하게 챙겨 줘서 의심부터 드는 상황.", openingLine: "너 정체가 뭐지? 원래 나한테 이렇게 잘했나." },
   { cue: "이건 너무한 거 아니냐고~", postLine: "다른 사람한테는 답장하면서 내 메시지만 늦게 본 걸 들킨 상황. 화내기보다 밈으로 시비 걸기.", openingLine: "내 답장만 세 시간? 이건 너무한 거 아니냐고~" },
@@ -550,7 +550,7 @@ const commentMeetingMemes: MemeCopy[] = [
   { cue: "너 나 좋아하긴 하냐?", postLine: "말은 다정한데 약속은 계속 미루는 상대에게 처음으로 확인하는 상황.", openingLine: "너 나 좋아하긴 하냐? 말고 행동으로 대답해." },
   { cue: "나 너 좋아해", postLine: "빙빙 돌려 말하던 둘 중 한 명이 대화를 끝내기 직전 갑자기 고백한 상황.", openingLine: "나 너 좋아해. 읽었으면 이제 네 대사야." },
   { cue: "빈말이라도 좋아한다고 해", postLine: "관계가 끝날 것 같은 순간, 사실보다 듣고 싶은 한마디가 먼저 튀어나온 상황.", openingLine: "알고 있어. 그래도 지금은 빈말이라도 좋아한다고 해." },
-  { cue: "왜 이리 나 끌려?", postLine: "서로 취향이 아닌데 계속 개인 대화가 이어지는 상황. 이유를 찾다 결국 인정하기.", openingLine: "너 진짜 내 취향 아닌데 왜 이렇게 나 끌려?" },
+  { cue: "왜 이리 끌리지.", postLine: "서로 취향이 아닌데 계속 개인 대화가 이어지는 상황. 이유를 찾다 결국 인정하기.", openingLine: "너 진짜 내 이상형 아닌데 왜 이렇게 끌리냐." },
   { cue: "모르는 척 실패", postLine: "재회한 둘이 같은 방에서 서로 모르는 척하다가 동시에 개인 채팅을 보낸 상황.", openingLine: "모르는 척은 둘 다 실패했네. 이제 누가 먼저 솔직해질래?" },
 ];
 
@@ -565,10 +565,10 @@ function memberPlayFor(category: Category, intent: QuestionIntent, band: number,
   const moodBySuit: Record<Suit, string> = {
     wands: "짧게 치고 들어가는 직진형",
     cups: "여운을 남기는 감정형",
-    swords: "건조하지만 선명한 대사형",
+    swords: "건조하지만 선명한 직언형",
     pentacles: "천천히 오래 보는 안정형",
   };
-  const mood = `${moodBySuit[suit]}${softened ? " · 평소보다 한 톤 낮게" : " · 반응은 분명하게"}`;
+  const mood = `${moodBySuit[suit]}${softened ? " · 평소보다 진지한 분위기로" : " · 반응은 분명하게"}`;
 
   let activity: DetailedReading["memberPlay"]["activity"];
   if ((category === "breakup" && band <= 2) || band <= 1) activity = "독백";
@@ -579,17 +579,17 @@ function memberPlayFor(category: Category, intent: QuestionIntent, band: number,
   const lines: Record<DetailedReading["memberPlay"]["activity"], Record<Category, { title: string; postLine: string; openingLine: string }>> = {
     "댓글 미팅": {
       love: {
-        title: "설명보다 장면 하나로 시작하는 댓미",
+        title: "설명보다 장면 하나로 시작하는 댓글 미팅",
         postLine: "새벽 두 시, 다들 나간 방에 우리 둘만 남은 상황. 먼저 자러 간다던 네가 다시 들어와 놓고 아무 말도 못 하는 장면부터.",
         openingLine: "안 잔다며. 다시 들어온 건 네 쪽인데, 왜 내가 먼저 말 걸어야 해?",
       },
       reunion: {
-        title: "재회보다 재접속의 긴장을 살리는 댓미",
+        title: "재회보다 재접속의 긴장을 살리는 댓글 미팅",
         postLine: "몇 달 만에 같은 친목방에서 다시 마주친 상황. 모르는 척 지나가려다 결국 개인 채팅을 연 쪽부터 시작.",
         openingLine: "잘 지냈냐는 말은 안 할게. 그동안 한 번도 내 생각 안 났는지만 말해.",
       },
       breakup: {
-        title: "새 관계로 넘어가는 가벼운 댓미",
+        title: "새 관계로 넘어가는 가벼운 댓글 미팅",
         postLine: "끝난 관계를 정리한 뒤 처음 들어간 모임에서 자꾸 시선이 겹치는 상황. 급하게 서사를 만들지 말고 첫 인사부터.",
         openingLine: "아까부터 계속 마주치네. 우연이면 이번까지만, 아니면 이름부터 알려 줘.",
       },
