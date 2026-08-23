@@ -57,9 +57,9 @@ export const suitMeta: Record<Suit, { name: string; mark: string; element: strin
     mark: "✦",
     element: "불 · 끌림과 행동",
     lens: {
-      love: "끌림은 말보다 행동의 속도와 열기로 드러납니다.",
-      reunion: "다시 이어지려는 의지는 실제 연락이나 만남 제안으로 확인해야 합니다.",
-      breakup: "상처를 억지로 덮기보다 새로운 생활 에너지로 바꾸는 과정이 중요합니다.",
+      love: "관심은 말보다 행동의 속도와 열기로 드러납니다.",
+      reunion: "다시 이어지려는 의지는 연락이나 독백 작성으로 확인해야 합니다.",
+      breakup: "상처를 억지로 덮기보다 새로운 취미를 배우며 생활을 바꾸는 과정이 중요합니다.",
     },
   },
   cups: {
@@ -69,7 +69,7 @@ export const suitMeta: Record<Suit, { name: string; mark: string; element: strin
     lens: {
       love: "호감의 크기보다 감정을 주고받을 수 있는지가 핵심입니다.",
       reunion: "추억과 그리움이 남아 있어도 현재의 감정인지 확인해야 합니다.",
-      breakup: "느끼는 마음을 부정하지 않을수록 회복이 조용히 시작됩니다.",
+      breakup: "이별 후 슬픔까지 끌어안아야 새로운 관계 또한 조용히 시작됩니다.",
     },
   },
   swords: {
@@ -77,7 +77,7 @@ export const suitMeta: Record<Suit, { name: string; mark: string; element: strin
     mark: "†",
     element: "공기 · 생각과 대화",
     lens: {
-      love: "추측을 키우기보다 분명한 말과 경계를 세우는 일이 필요합니다.",
+      love: "의심을 키우는 것보다 분명한 말과 행동을 보여 주는 일이 필요합니다.",
       reunion: "재회의 성패는 감정 호소보다 과거 문제를 솔직히 다룰 수 있는지에 달렸습니다.",
       breakup: "생각의 반복을 멈추고 사실과 해석을 구분하는 것이 회복의 첫걸음입니다.",
     },
@@ -99,8 +99,8 @@ export const majorCards: TarotCard[] = [
     { keywords: "새 출발 · 자유 · 가능성", text: "정해진 결말보다 새로운 경험을 향해 마음이 열려 있습니다.", advice: "기대는 가볍게 품되 상대의 신호를 확인하며 한 걸음씩 움직이세요.", score: 1 },
     { keywords: "충동 · 불안정 · 준비 부족", text: "설렘이 현실 점검보다 앞서거나 같은 실수를 가볍게 넘길 수 있습니다.", advice: "지금의 선택이 외로움을 피하려는 충동인지 먼저 살펴보세요.", score: -1 }),
   m("magician", "마법사", "THE MAGICIAN", "∞", "I",
-    { keywords: "의지 · 표현 · 시작", text: "마음과 행동을 일치시키면 관계의 흐름을 실제로 바꿀 힘이 있습니다.", advice: "애매한 암시보다 원하는 바를 분명하고 매력 있게 표현하세요.", score: 2 },
-    { keywords: "말뿐인 약속 · 조종 · 자신감 부족", text: "표현은 화려하지만 진심이나 실행이 따라오지 않을 수 있습니다.", advice: "말보다 반복되는 행동을 기준으로 진정성을 판단하세요.", score: -2 }),
+    { keywords: "의지 · 표현 · 시작", text: "마음과 행동을 일치시키면 관계의 흐름을 바꿀 힘이 있습니다.", advice: "애매한 암시보다 원하는 바를 분명하고 매력 있게 표현하세요.", score: 2 },
+    { keywords: "말뿐인 약속 · 조종 · 자신감 부족", text: "멘트는 화려하지만 진심이나 실행이 따라오지 않을 수 있습니다.", advice: "말보다 반복되는 행동을 기준으로 진정성을 판단하세요.", score: -2 }),
   m("priestess", "여사제", "THE HIGH PRIESTESS", "☾", "II",
     { keywords: "직관 · 침묵 · 숨은 감정", text: "겉으로 드러난 말보다 아직 표현되지 않은 감정이 더 크게 흐릅니다.", advice: "답을 재촉하지 말고 불편한 느낌까지 포함해 직관을 관찰하세요.", score: 0 },
     { keywords: "비밀 · 혼란 · 직감 외면", text: "침묵이 깊어지며 사실과 상상이 뒤섞이기 쉽습니다.", advice: "확인되지 않은 추측으로 빈칸을 채우지 말고 필요한 질문을 하세요.", score: -1 }),
@@ -514,7 +514,7 @@ function actionPlanFor(category: Category, band: number, major: DrawnCard, minor
 type MemeCopy = { cue: string; postLine: string; openingLine: string };
 
 const seekingMemes: MemeCopy[] = [
-  { cue: "연애비 입금해", postLine: "연애비 입금해. 삼만 원 말고 평생 자동이체 가능한 사람만.", openingLine: "입금명은 본명 말고 임관으로 부탁." },
+  { cue: "연애비 입금해", postLine: "연애비 입금해. 삼만 원 말고 평생 자동이체 가능한 사람만.", openingLine: "입금 명은 본명 말고 임관으로 부탁." },
   { cue: "남친 구함", postLine: "남친 구함. 지원 조건은 나 좋아하기, 우대 조건은 티 내기.", openingLine: "서류는 됐고 플러팅 한 줄만 제출해." },
   { cue: "애인 구함", postLine: "애인 구함. 급구인데 아무나 뽑을 생각은 없음.", openingLine: "일단 지원 동기부터 말해 봐." },
   { cue: "남자친구 없어요", postLine: "남자친구 없어요. 없는데요, 오늘부터 생길 예정입니다.", openingLine: "그 예정에 네 이름 넣어도 돼?" },
