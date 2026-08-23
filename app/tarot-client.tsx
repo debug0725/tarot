@@ -8,8 +8,8 @@ type DrawStep = "idle" | "major" | "minor" | "result";
 type MemberTendency = "탑" | "바텀" | "";
 
 const CATEGORY: Record<Category, { label: string; en: string; title: string; description: string; prompt: string; mark: string }> = {
-  love: { label: "연애 타로", en: "LOVE", title: "이 사람이랑 장기 연애 가능할까", description: "상대와 나 사이에 흐르는 마음과 다음 행동을 읽어요.", prompt: "예: 그 사람은 지금 나를 어떻게 생각할까?", mark: "♡" },
-  reunion: { label: "재회 타로", en: "REUNION", title: "다시 이어질 수 있을까", description: "남은 감정과 재회 전에 달라져야 할 현실을 살펴봐요.", prompt: "예: 다시 연락한다면 무엇이 달라져야 할까?", mark: "↻" },
+  love: { label: "연애 타로", en: "LOVE", title: "이 사람이랑 만날 수 있을까", description: "상대와 나 사이에 흐르는 마음과 다음 행동을 읽어요.", prompt: "예: 그 사람은 지금 나를 어떻게 생각할까?", mark: "♡" },
+  reunion: { label: "재회 타로", en: "REUNION", title: "우리 다시 이어질 수 있을까", description: "남은 감정과 재회 전에 달라져야 할 현실을 살펴봐요.", prompt: "예: 다시 연락한다면 무엇이 달라져야 할까?", mark: "↻" },
   breakup: { label: "이별 타로", en: "GOODBYE", title: "끝난 마음의 다음 페이지", description: "이별이 남긴 의미와 지금 나를 회복시키는 방향을 읽어요.", prompt: "예: 이 관계에서 이제 놓아야 할 것은?", mark: "⌁" },
 };
 
@@ -352,7 +352,7 @@ export default function Home() {
       <div className="diary-pages" id="top">
         <section className="hero-page">
           <span className="binding-line" aria-hidden="true" />
-          <div className="hero-copy"><span className="eyebrow">TUESDAY · 00:18 · SECRET NOTE</span><h1>오늘 밤<br /><em>일기 밴드에</em>새<br />일기를 작성해 볼까요?</h1><p>메이저 한 장은 관계의 큰 흐름을,<br />마이너 한 장은 지금의 감정과 행동을 비춰요.</p><a className="start-link" href="#tarot">오늘의 타로 펼치기<span>↓</span></a></div>
+          <div className="hero-copy"><span className="eyebrow">TUESDAY · 00:18 · SECRET NOTE</span><h1>오늘 밤<br /><em>새 일기를</em>작성해 볼까요?</h1><p>메이저 한 장은 관계의 큰 흐름을,<br />마이너 한 장은 지금의 감정과 행동을 비춰요.</p><a className="start-link" href="#tarot">오늘의 타로 펼치기<span>↓</span></a></div>
           <div className="scrap-zone" aria-hidden="true"><span className="tape tape-one" /><div className="polaroid moon-photo"><div><i>☾</i><b>✦</b><b>✧</b></div><p>our midnight</p></div><span className="tape tape-two" /><div className="polaroid star-photo"><div><i>♡</i><b>+</b></div><p>love memo #018</p></div><div className="sticky-quote">don&apos;t rush.<br />love has its<br />own timing. <span>♡</span></div><div className="sharp-pencil"><i /></div></div>
         </section>
 
