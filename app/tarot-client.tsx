@@ -8,9 +8,9 @@ type DrawStep = "idle" | "major" | "minor" | "result";
 type MemberTendency = "탑" | "바텀" | "";
 
 const CATEGORY: Record<Category, { label: string; en: string; title: string; description: string; prompt: string; mark: string }> = {
-  love: { label: "연애 타로", en: "LOVE", title: "지금, 우리 사이의 온도", description: "상대와 나 사이에 흐르는 마음과 다음 행동을 읽어요.", prompt: "예: 그 사람은 지금 나를 어떻게 생각할까?", mark: "♡" },
-  reunion: { label: "재회 타로", en: "REUNION", title: "다시 이어질 수 있을까", description: "남은 감정과 재회 전에 달라져야 할 현실을 살펴봐요.", prompt: "예: 다시 연락한다면 무엇이 달라져야 할까?", mark: "↻" },
-  breakup: { label: "이별 타로", en: "GOODBYE", title: "끝난 마음의 다음 페이지", description: "이별이 남긴 의미와 지금 나를 회복시키는 방향을 읽어요.", prompt: "예: 이 관계에서 이제 놓아주어야 할 것은?", mark: "⌁" },
+  love: { label: "연애 타로", en: "LOVE", title: "연락 상대랑 이어질 수 있을까", description: "내 애인은 나를 좋아하고 있을까", prompt: "예: 구 애인과 현재 연락 상대 중 누구를 선택해야 할까?", mark: "♡" },
+  reunion: { label: "재회 타로", en: "REUNION", title: "다시 이어질 수 있을까", description: "남은 감정과 재회 전에 달라져야 할 현실을 확인해 보자", prompt: "예: 다시 연락한다면 무엇이 달라져야 할까?", mark: "↻" },
+  breakup: { label: "이별 타로", en: "GOODBYE", title: "권태기를 이길 수 있는 방법은 있을까", description: "이별이 남긴 의미와 지금 나를 회복시키는 방향을 읽자", prompt: "예: 이 관계에서 이제 놓아야 할 것은?", mark: "⌁" },
 };
 
 function hash(value: string) {
@@ -162,10 +162,10 @@ function buildAiPrompt(category: Category, question: string, major: DrawnCard, m
 - 피해야 할 행동 2가지와 각각의 이유
 - 마지막에 질문에 대한 최종 결론을 한 문장으로 다시 정리하세요.
 
-## 6. 멤버놀이 추천
+## 6. 구함 추천
    - 추천 활동 1개
    - 짧은 구함/댓글 미팅 멘트 3개
-   - 감성적인 시 문장보다 인터넷 밈처럼 짧고 웃기게
+   - 감성적인 시 문장보다 핀터레스트 등에서 찾은 실제 유행 인터넷 밈을 참고할 것
 
 전체 분량은 한국어 기준 약 1,200~1,800자로 충분히 상세하게 작성하세요. 추가 질문을 요구하지 말고 주어진 정보 안에서 최선의 답을 완성하세요. 소제목과 짧은 문단을 사용하고, 질문과 무관한 타로 강의·상투적인 위로·책임 회피성 문장은 빼세요.`;
 }
@@ -278,7 +278,7 @@ function FriendPage({ friend }: { friend: FriendProfile }) {
         <div><dt>▣ MOVIE NIGHT</dt><dd>{friend.movie}</dd></div>
       </dl>
       <blockquote>“{friend.message}”</blockquote>
-      <small>친구 정보는 추후 전달받은 실제 프로필로 교체됩니다.</small>
+      <small>일기 밴드 최고</small>
     </div>
   </section>;
 }
@@ -356,16 +356,16 @@ export default function Home() {
       <div className="diary-pages" id="top">
         <section className="hero-page">
           <span className="binding-line" aria-hidden="true" />
-          <div className="hero-copy"><span className="eyebrow">TUESDAY · 00:18 · SECRET NOTE</span><h1>오늘 밤,<br /><em>사랑의 다음 장면</em>을<br />펼쳐볼까요?</h1><p>메이저 한 장은 관계의 큰 흐름을,<br />마이너 한 장은 지금의 감정과 행동을 비춰요.</p><a className="start-link" href="#tarot">오늘의 타로 펼치기 <span>↓</span></a></div>
+          <div className="hero-copy"><span className="eyebrow">SECRET NOTE</span><h1>오늘 밤<br /><em>사랑의 다음 카드</em>를<br />펼쳐 볼까요?</h1><p>메이저 한 장은 관계의 큰 흐름을,<br />마이너 한 장은 지금의 감정과 행동을 비춰요.</p><a className="start-link" href="#tarot">오늘의 타로 펼치기 <span>↓</span></a></div>
           <div className="scrap-zone" aria-hidden="true"><span className="tape tape-one" /><div className="polaroid moon-photo"><div><i>☾</i><b>✦</b><b>✧</b></div><p>our midnight</p></div><span className="tape tape-two" /><div className="polaroid star-photo"><div><i>♡</i><b>+</b></div><p>love memo #018</p></div><div className="sticky-quote">don&apos;t rush.<br />love has its<br />own timing. <span>♡</span></div><div className="sharp-pencil"><i /></div></div>
         </section>
 
         <section className="tarot-section" id="tarot">
-          <div className="section-title"><span className="section-label">01 · CHOOSE A PAGE</span><h2>어떤 마음을<br /><em>읽어볼까요?</em></h2><p>지금 가장 가까운 질문 하나만 골라주세요.</p></div>
+          <div className="section-title"><span className="section-label">01 · CHOOSE A PAGE</span><h2>어떤 마음을<br /><em>읽어 볼까요?</em></h2><p>지금 가장 가까운 질문 하나만 골라주세요.</p></div>
           <div className="category-tabs">{(Object.keys(CATEGORY) as Category[]).map((item) => <button key={item} className={category === item ? "active" : ""} onClick={() => { setCategory(item); setStep("idle"); setMajor(null); setMinor(null); setPromptStatus(""); }}><span>{CATEGORY[item].mark}</span><small>{CATEGORY[item].en}</small><strong>{CATEGORY[item].label}</strong><p>{CATEGORY[item].description}</p><i>↗</i></button>)}</div>
           <section className="question-page" id="question"><span className="tape question-tape" aria-hidden="true" /><div><span className="section-label">02 · WRITE YOUR QUESTION</span><h3>{CATEGORY[category].title}</h3><p>{CATEGORY[category].description}</p></div><label><span>dear cards,</span><textarea value={question} onChange={(event) => { setQuestion(event.target.value.slice(0, 120)); setPromptStatus(""); }} placeholder={CATEGORY[category].prompt} rows={3} /></label><button className="primary-button" onClick={beginDraw}>카드 펼치기 <span>✦</span></button></section>
           <section className="member-context" aria-label="멤버놀이 프로필 선택사항">
-            <div><span className="section-label">MEMBER PLAY · OPTIONAL</span><strong>성향과 임관을 적어둘까요?</strong><p>추천 활동과 멘트는 카드 결과로만 정하고, 아래 정보는 결과에 그대로 표기해요.</p></div>
+            <div><span className="section-label">MEMBER PLAY · OPTIONAL</span><strong>성향과 임관을 적어 둘까요?</strong><p>추천 활동과 멘트는 카드 결과로만 정하고, 아래 정보는 결과에 그대로 표기해요.</p></div>
             <fieldset><legend>성향</legend><div>{(["탑", "바텀"] as const).map((item) => <button key={item} type="button" className={tendency === item ? "active" : ""} aria-pressed={tendency === item} onClick={() => { setTendency(tendency === item ? "" : item); setPromptStatus(""); }}>{item}</button>)}</div></fieldset>
             <label><span>임관</span><input value={persona} onChange={(event) => { setPersona(event.target.value.slice(0, 24)); setPromptStatus(""); }} placeholder="예: 현재 프로필의 아이돌 이름" /></label>
           </section>
@@ -392,12 +392,12 @@ export default function Home() {
               <div className="member-profile-strip"><span>성향 · {tendency || "직접 표기"}</span><span>임관 · {persona.trim() || "현재 프로필"}</span><em>{reading.memberPlay.mood}</em></div>
               <span className="meme-cue">MEME CUE · {reading.memberPlay.memeCue}</span><h4>{reading.memberPlay.title}</h4>
               <div className="member-lines"><article><small>바로 올릴 멘트</small><span className="member-line-profile">[{tendency || "성향"} · {persona.trim() || "임관"}]</span><blockquote>“{reading.memberPlay.postLine}”</blockquote></article><article><small>첫 멘트 / 이어갈 톤</small><blockquote>“{reading.memberPlay.openingLine}”</blockquote></article></div>
-              <p className="member-caution"><b>NOTE</b>구함 15종·댓글 미팅 20종 중 카드 조합에 맞는 한 개가 나옵니다. 임관은 실제 아이돌의 성향이나 사생활을 뜻하지 않습니다.</p>
+              <p className="member-caution"><b>NOTE</b>임관은 실제 아이돌의 성향이나 사생활을 뜻하지 않습니다.</p>
             </section>
             <FriendPage friend={friend} />
-            <div className="result-actions"><button onClick={reset}>다른 카드 다시 뽑기 ↻</button><button onClick={() => saveResultImage(category, question, major, minor, friend, tendency, persona)}>결과 이미지 저장 ↓</button></div>
+            <div className="result-actions"><button onClick={reset}>다른 카드 다시 뽑기 ↻</button><button onClick={() => saveResultImage(category, question, major, minor, friend, tendency, persona)}>이미지 저장(비추) ↓</button></div>
           </section>}
-          <p className="reading-source">사이트 안에서는 카드 조합에 따른 간단 결과만 보여 줍니다. 심층 리딩 프롬프트는 API를 호출하지 않고 브라우저에서 만들어지며, 복사하기 전에는 질문이나 카드 정보가 외부로 전송되지 않습니다. 타로는 상대의 실제 속마음이나 미래를 확인하는 도구가 아닙니다.</p>
+          <p className="reading-source">사이트 안에서는 카드 조합에 따른 간단 결과만 보여 줍니다. 질문은 따로 저장되지 않으며 일기 밴드 멤버만이 해당 사이트의 쿠키 및 API를 이용할 수 있습니다.</p>
         </section>
 
         <footer className="site-footer"><span>midnight diary tarot</span><span>tarot as a mirror, not a verdict</span><span>© 2026</span></footer>
